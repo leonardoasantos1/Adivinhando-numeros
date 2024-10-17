@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="main">
+        <section class="section">
+            <p class="text-inicio">Descubra o número secreto, ele está entre 0 e 25!</p>
+        <div class="container-inicio" id="container-inicio">
+            <input class="input-inicio" id="tentativas" type="number" placeholder="Insira o número de tentativas">
+            <button class="botao-inicio btn" onclick="comecar()">Começar</button>
+        </div>
+        <div class="container-final" id="container-final">
+            <p class="tentativas-final">Tentativas restantes: <span id="marcador-tentativas">0</span></p>
+            <input class="input-final" id="palpite" type="number" placeholder="Qual seu palpite:">
+            <button class="botao-final btn" id="btn" onclick="verificar()">Verificar</button>
+            <p class="resultado-final" id="resultado"></p>
+        </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
